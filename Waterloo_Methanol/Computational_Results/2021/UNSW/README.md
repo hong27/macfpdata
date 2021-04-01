@@ -10,7 +10,7 @@ Country: Australia
 
 ### Test case
 
-Case 3b - NIST 30cm methanol pool fire
+Case 3a - Waterloo 30cm methanol pool fire
 
 ------------------
 
@@ -67,7 +67,7 @@ Pressure: 101325 Pa
 
 ### Boundary conditions
 
-Inlet: inflow with prescribed mass flow rate of 1.07 g/(m^2 s) and temperature of 338 K  
+Inlet: inflow with prescribed mass flow rate of 1.07 g/s and temperature of 338 K  
 Burner walls: no-slip, adiabatic    
 Top, sides and bottom: open  
 
