@@ -104,6 +104,8 @@ Advection: Velocity - Gauss linear, Scalars - TVD (Gauss SuperBee)
 
 Diffusion: Gauss linear corrected
 
+Pressure-velocity coupling: PIMPLE
+
 ------------------
 
 ### Computational Cost (hh:mm:ss)
