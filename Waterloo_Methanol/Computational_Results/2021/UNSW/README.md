@@ -31,12 +31,12 @@ liquid pool surface is located at z = 0.3 m
 pan lip thickness is 1 cm  
 pan lip height is 1 cm  
 
-Cell size: (elevation, vertical cell size):  
+Cell size:  
 |elevation|mesh scheme g1|mesh scheme g2|mesh scheme g3|
-|---|---|---|---|
+|:---:|:---:|:---:|:---:|
 |-30 to 0 cm |stretch|stretch|stretch|
 |0 to 10 cm|1 cm|0.667 cm|0.5 cm|
-|10 to 20 cm|strech (1 - 2 cm)|stretch 0.667 - 1.33 cm|stretch 0.5 - 1 cm|
+|10 to 20 cm|strech (1 - 2 cm)|stretch (0.667 - 1.33 cm)|stretch (0.5 - 1 cm)|
 |20 to 60 cm|2 cm|1.33 cm|1 cm|
 |60 to 300 cm|stretch|stretch|stretch|
 
@@ -86,9 +86,7 @@ Combustion model: Unsteady Radiative Flamelet Model
 
 Radiation model: fvDOM  
 
-Radiative fraction: (predicted or prescribed; if prescribed, what value)  
-
-prescribed: fixed radiant fraction = 0.22   
+Radiative fraction: prescribed: fixed radiant fraction = 0.22   
 
 Soot model: none  
 
@@ -102,9 +100,9 @@ Time: Euler
 
 CFL: 0.6
 
-Advection: Velocity - 2nd-order, Gauss linear, Scalars - TVD (Gauss SuperBee)
+Advection: Velocity - Gauss linear, Scalars - TVD (Gauss SuperBee)
 
-Diffusion: Conservative Gaussian integration (Gauss linear corrected)
+Diffusion: Gauss linear corrected
 
 ------------------
 
