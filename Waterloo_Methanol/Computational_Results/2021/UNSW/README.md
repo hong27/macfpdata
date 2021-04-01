@@ -32,9 +32,14 @@ pan lip thickness is 1 cm
 pan lip height is 1 cm  
 
 Cell size: (elevation, vertical cell size):  
-mesh scheme g1: (-30 to 0 cm, strech), (0 to 10 cm, 1 cm), (10 to 20 cm, stretch from 1 cm to 2 cm), (20 to 60 cm, 2 cm), (60 to 300 cm, stretch)  
-mesh scheme g2: (-30 to 0 cm, strech), (0 to 10 cm, 0.667 cm), (10 to 20 cm, stretch from 0.667 cm to 1.33 cm), (20 to 60 cm, 1.33 cm), (60 to 300 cm, stretch)  
-mesh scheme g3: (-30 to 0 cm, strech), (0 to 10 cm, 0.5 cm), (10 to 20 cm, stretch from 0.5 cm to 1 cm), (20 to 60 cm, 1 cm), (60 to 300 cm, stretch)
+|elevation|mesh scheme g1|mesh scheme g2|mesh scheme g3|
+|---|---|---|---|
+|-30 to 0 cm |stretch|stretch|stretch|
+|0 to 10 cm|1 cm|0.667 cm|0.5 cm|
+|10 to 20 cm|strech (1 - 2 cm)|stretch 0.667 - 1.33 cm|stretch 0.5 - 1 cm|
+|20 to 60 cm|2 cm|1.33 cm|1 cm|
+|60 to 300 cm|stretch|stretch|stretch|
+
 
 Cell type: Non-uniform
 
