@@ -10,7 +10,7 @@ Country: Australia
 
 ### Test case
 
-Case 3a - Waterloo 30cm methanol pool fire
+Case 3b - NIST 30cm methanol pool fire
 
 ------------------
 
@@ -24,29 +24,24 @@ Version: OpenFOAM-7
 ### Resolution
 
 #### Computational domain discretization (flow solver)
-Domain: 
-3 m (diameter) x 3.3 m (height) cylinder
-inner diameter of the fuel pan = 30.1 cm
-liquid pool surface is located at z = 0.3 m
-pan lip thickness is 1 cm
-pan lip height is 1 cm
+Domain:   
+3 m (diameter) x 3.3 m (height) cylinder  
+inner diameter of the fuel pan = 30.1 cm  
+liquid pool surface is located at z = 0.3 m  
+pan lip thickness is 1 cm  
+pan lip height is 1 cm  
 
-Cell size:   
-(elevation, vertical cell size):
-
-mesh scheme g1: (-30 to 0 cm, strech), (0 to 10 cm, 1 cm), (10 to 20 cm, stretch from 1 cm to 2 cm), (20 to 60 cm, 2 cm), (60 to 300 cm, stretch)
-
-mesh scheme g2: (-30 to 0 cm, strech), (0 to 10 cm, 0.667 cm), (10 to 20 cm, stretch from 0.667 cm to 1.33 cm), (20 to 60 cm, 1.33 cm), (60 to 300 cm, stretch)
-
+Cell size: (elevation, vertical cell size):  
+mesh scheme g1: (-30 to 0 cm, strech), (0 to 10 cm, 1 cm), (10 to 20 cm, stretch from 1 cm to 2 cm), (20 to 60 cm, 2 cm), (60 to 300 cm, stretch)  
+mesh scheme g2: (-30 to 0 cm, strech), (0 to 10 cm, 0.667 cm), (10 to 20 cm, stretch from 0.667 cm to 1.33 cm), (20 to 60 cm, 1.33 cm), (60 to 300 cm, stretch)  
 mesh scheme g3: (-30 to 0 cm, strech), (0 to 10 cm, 0.5 cm), (10 to 20 cm, stretch from 0.5 cm to 1 cm), (20 to 60 cm, 1 cm), (60 to 300 cm, stretch)
-
 
 Cell type: Non-uniform
 
-Total cells: 
-mesh scheme g1: 0.17 million
-mesh scheme g2: 0.58 million
-mesh scheme g3: 1.34 million
+Total cells:   
+mesh scheme g1: 0.17 million  
+mesh scheme g2: 0.58 million  
+mesh scheme g3: 1.34 million  
 
 Comments:
 
@@ -60,16 +55,16 @@ Comments:
 ### Initial conditions
 Comments:
 
-Temperature: 300 K  
-Pressure: 101325 Pa
+Temperature: 300 K    
+Pressure: 101325 Pa  
 
 ------------------
 
 ### Boundary conditions
 
-Inlet: inflow with prescribed mass flow rate of 1.07 g/s and temperature of 338 K 
-Burner walls: no-slip, adiabatic  
-Top, sides and bottom: open
+Inlet: inflow with prescribed mass flow rate of 1.07 g/(m^2 s) and temperature of 338 K  
+Burner walls: no-slip, adiabatic    
+Top, sides and bottom: open  
 
 
 Comments:
@@ -78,21 +73,21 @@ Comments:
 ------------------
 
 ### Models (include parameters)
-Turbulence model: Dynamic k-equation model
-Unity Lewis number assumption applied
-Sct = 0.7
+Turbulence model: Dynamic k-equation model  
+Unity Lewis number assumption applied  
+Sct = 0.7  
 
-Combustion model: Unsteady Radiative Flamelet Model
+Combustion model: Unsteady Radiative Flamelet Model  
 
-Radiation model: fvDOM
+Radiation model: fvDOM  
 
-Radiative fraction: (predicted or prescribed; if prescribed, what value)
+Radiative fraction: (predicted or prescribed; if prescribed, what value)  
 
-prescribed: fixed radiant fraction = 0.22  
+prescribed: fixed radiant fraction = 0.22   
 
-Soot model: none
+Soot model: none  
 
-Comments:
+Comments:  
 Radiation is updated once every 20 flow time steps
 
 ------------------
@@ -109,22 +104,22 @@ Diffusion: Conservative Gaussian integration (Gauss linear corrected)
 ------------------
 
 ### Computational Cost (hh:mm:ss)
-Wall clock time:
-g1: 02:00:00
-g2: 08:00:00
-g3: 14:00:00
+Wall clock time:  
+g1: 02:00:00  
+g2: 08:00:00  
+g3: 14:00:00  
 
 Simulation time: 35 s
 
-Number of CPUs (MPI Processes):
-g1: 48 cores
-g2: 48 cores
-g3: 96 cores
+Number of CPUs (MPI Processes):  
+g1: 48 cores  
+g2: 48 cores  
+g3: 96 cores  
 
-CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 
-g1: 0.058 wall-sec/sim-sec/cell
-g2: 0.068 wall-sec/sim-sec/cell
-g3: 0.103 wall-sec/sim-sec/cell
+CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):   
+g1: 0.058 wall-sec/sim-sec/cell  
+g2: 0.068 wall-sec/sim-sec/cell  
+g3: 0.103 wall-sec/sim-sec/cell  
 
 ------------------
 
