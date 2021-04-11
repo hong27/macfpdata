@@ -85,9 +85,9 @@ Sct = 0.7
 Combustion model: Unsteady Radiative Flamelet Model  
 
 Radiation model: fvDOM  
-Model 1: prescribed gloabl radiant fraction   
+Model 1 - prescribed: prescribed gloabl radiant fraction   
          Radiative fraction: prescribed: fixed radiant fraction = 0.22  
-Model 2: grey Mean model with emission TRI    
+Model 2 - predicted: grey Mean model with emission TRI    
 
 Soot model: none  
 
